@@ -113,7 +113,7 @@ namespace ts {
         /** If provided, used to resolve the module names, otherwise typescript's default module resolution */
         resolveModuleNames?(moduleNames: string[], containingFile: string, reusedNames: string[] | undefined, redirectedReference: ResolvedProjectReference | undefined, options: CompilerOptions, containingSourceFile?: SourceFile, partialResolutionInfo?: PartialResolutionInfo): (ResolvedModule | undefined)[];
         /** If provided, used to resolve type reference directives, otherwise typescript's default resolution */
-        resolveTypeReferenceDirectives?(typeReferenceDirectiveNames: string[] | readonly FileReference[], containingFile: string, redirectedReference: ResolvedProjectReference | undefined, options: CompilerOptions, containingFileMode?: SourceFile["impliedNodeFormat"] | undefined): (ResolvedTypeReferenceDirective | undefined)[];
+        resolveTypeReferenceDirectives?(typeReferenceDirectiveNames: string[] | readonly FileReference[], containingFile: string, redirectedReference: ResolvedProjectReference | undefined, options: CompilerOptions, containingFileMode?: SourceFile["impliedNodeFormat"] | undefined, partialResolutionInfo?: PartialResolutionInfo): (ResolvedTypeReferenceDirective | undefined)[];
     }
     /** Internal interface used to wire emit through same host */
 
@@ -364,7 +364,7 @@ namespace ts {
             ((moduleNames, containingFile, _reusedNames, redirectedReference, _options, sourceFile, partialResolutionInfo) => resolutionCache.resolveModuleNames(moduleNames, containingFile, redirectedReference, sourceFile, partialResolutionInfo));
         compilerHost.resolveTypeReferenceDirectives = host.resolveTypeReferenceDirectives ?
             ((...args) => host.resolveTypeReferenceDirectives!(...args)) :
-            ((typeDirectiveNames, containingFile, redirectedReference, _options, containingFileMode) => resolutionCache.resolveTypeReferenceDirectives(typeDirectiveNames, containingFile, redirectedReference, containingFileMode));
+            ((typeDirectiveNames, containingFile, redirectedReference, _options, containingFileMode, partialResolutionInfo) => resolutionCache.resolveTypeReferenceDirectives(typeDirectiveNames, containingFile, redirectedReference, containingFileMode, partialResolutionInfo));
         const userProvidedResolution = !!host.resolveModuleNames || !!host.resolveTypeReferenceDirectives;
 
         builderProgram = readBuilderProgram(compilerOptions, compilerHost) as any as T;

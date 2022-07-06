@@ -268,10 +268,20 @@ namespace ts.tscWatch {
                         export function thing(): void {}
                     `
                 },
+                {
+                    path: `${projectRoot}/index2.ts`,
+                    content: Utils.dedent`
+                        export function thing(): void {}
+                    `
+                },
                 libFile
             ], { currentDirectory: projectRoot }),
             commandLineArgs: ["-w", "--traceResolution"],
-            changes: emptyArray
+            changes: [{
+                caption: "Add import to index2",
+                change: sys => sys.prependFile(`${projectRoot}/index2.ts`, `import * as me from "./index.js";`),
+                timeouts: sys => sys.runQueuedTimeoutCallbacks(),
+            }]
         });
     });
 }

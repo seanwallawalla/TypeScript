@@ -36,7 +36,6 @@ Output::
 
 Found 'package.json' at '/user/username/projects/myproject/package.json'.
 'package.json' does not have a 'typesVersions' field.
-File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
 ======== Resolving module '@this/package' from '/user/username/projects/myproject/index.ts'. ========
 Explicitly specified module resolution kind: 'NodeNext'.
 File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
@@ -44,13 +43,9 @@ File '/user/username/projects/myproject/index.ts' exist - use it as a name resol
 Resolving real path for '/user/username/projects/myproject/index.ts', result '/user/username/projects/myproject/index.ts'.
 ======== Module name '@this/package' was successfully resolved to '/user/username/projects/myproject/index.ts'. ========
 File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
 File '/a/lib/package.json' does not exist.
 File '/a/package.json' does not exist.
 File '/package.json' does not exist.
-File '/a/lib/package.json' does not exist according to earlier cached lookups.
-File '/a/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 [91merror[0m[90m TS2209: [0mThe project root is ambiguous, but is required to resolve export map entry '.' in file '/user/username/projects/myproject/package.json'. Supply the `rootDir` compiler option to disambiguate.
 
 [[90m12:00:40 AM[0m] Found 1 error. Watching for file changes.
@@ -136,7 +131,6 @@ File '/a/package.json' does not exist.
 File '/package.json' does not exist.
 Found 'package.json' at '/user/username/projects/myproject/package.json'.
 'package.json' does not have a 'typesVersions' field.
-File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
 File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
 File '/user/username/projects/myproject/package.json' exists according to earlier cached lookups.
 Reusing resolution of module '@this/package' from '/user/username/projects/myproject/index.ts' of old program, it was successfully resolved to '/user/username/projects/myproject/index.ts'.

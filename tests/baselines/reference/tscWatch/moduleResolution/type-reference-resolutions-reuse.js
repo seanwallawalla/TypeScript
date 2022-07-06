@@ -71,16 +71,6 @@ File '/user/username/projects/package.json' does not exist according to earlier 
 File '/user/username/package.json' does not exist according to earlier cached lookups.
 File '/user/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 ======== Resolving type reference directive 'pkg', containing file '/user/username/projects/myproject/index.ts', root directory '/user/username/projects/myproject/node_modules/@types'. ========
 Resolving with primary search path '/user/username/projects/myproject/node_modules/@types'.
 Looking up in 'node_modules' folder, initial location '/user/username/projects/myproject'.
@@ -104,7 +94,6 @@ Directory '/user/node_modules' does not exist, skipping all lookups in it.
 Directory '/node_modules' does not exist, skipping all lookups in it.
 ======== Type reference directive 'pkg1' was not resolved. ========
 File '/user/username/projects/myproject/node_modules/pkg/package.json' exists according to earlier cached lookups.
-File '/user/username/projects/myproject/node_modules/pkg/package.json' exists according to earlier cached lookups.
 ======== Resolving type reference directive 'pkg2', containing file '/user/username/projects/myproject/__inferred type names__.ts', root directory '/user/username/projects/myproject/node_modules/@types'. ========
 Resolving with primary search path '/user/username/projects/myproject/node_modules/@types'.
 File '/user/username/projects/myproject/node_modules/@types/pkg2/package.json' does not exist.
@@ -119,19 +108,8 @@ File '/user/username/projects/package.json' does not exist according to earlier 
 File '/user/username/package.json' does not exist according to earlier cached lookups.
 File '/user/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/node_modules/@types/pkg2/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/node_modules/@types/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/node_modules/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 File '/a/lib/package.json' does not exist.
 File '/a/package.json' does not exist.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/a/lib/package.json' does not exist according to earlier cached lookups.
-File '/a/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 [96mindex.ts[0m:[93m2[0m:[93m23[0m - [91merror[0m[90m TS2688: [0mCannot find type definition file for 'pkg1'.
 
@@ -236,11 +214,6 @@ File '/user/username/projects/myproject/package.json' does not exist.
 File '/user/username/projects/package.json' does not exist.
 File '/user/username/package.json' does not exist.
 File '/user/package.json' does not exist.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 Found 'package.json' at '/user/username/projects/myproject/node_modules/pkg/package.json'.
 'package.json' does not have a 'typesVersions' field.

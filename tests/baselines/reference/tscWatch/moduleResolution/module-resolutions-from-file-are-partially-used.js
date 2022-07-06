@@ -56,16 +56,6 @@ File '/user/username/projects/package.json' does not exist according to earlier 
 File '/user/username/package.json' does not exist according to earlier cached lookups.
 File '/user/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 ======== Resolving module 'pkg' from '/user/username/projects/myproject/index.ts'. ========
 Explicitly specified module resolution kind: 'Node16'.
 File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
@@ -122,12 +112,8 @@ Loading module as file / folder, candidate module location '/user/username/proje
 File '/user/username/projects/myproject/a.ts' exist - use it as a name resolution result.
 ======== Module name './a' was successfully resolved to '/user/username/projects/myproject/a.ts'. ========
 File '/user/username/projects/myproject/node_modules/pkg/package.json' exists according to earlier cached lookups.
-File '/user/username/projects/myproject/node_modules/pkg/package.json' exists according to earlier cached lookups.
 File '/a/lib/package.json' does not exist.
 File '/a/package.json' does not exist.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/a/lib/package.json' does not exist according to earlier cached lookups.
-File '/a/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 [96mindex.ts[0m:[93m2[0m:[93m39[0m - [91merror[0m[90m TS2307: [0mCannot find module 'pkg1' or its corresponding type declarations.
 
@@ -219,11 +205,6 @@ File '/user/username/projects/myproject/package.json' does not exist.
 File '/user/username/projects/package.json' does not exist.
 File '/user/username/package.json' does not exist.
 File '/user/package.json' does not exist.
-File '/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/myproject/package.json' does not exist according to earlier cached lookups.
-File '/user/username/projects/package.json' does not exist according to earlier cached lookups.
-File '/user/username/package.json' does not exist according to earlier cached lookups.
-File '/user/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 Found 'package.json' at '/user/username/projects/myproject/node_modules/pkg/package.json'.
 'package.json' does not have a 'typesVersions' field.

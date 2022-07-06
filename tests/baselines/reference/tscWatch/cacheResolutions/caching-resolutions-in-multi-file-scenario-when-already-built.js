@@ -360,9 +360,6 @@ File '/src/project/package.json' does not exist.
 File '/src/package.json' does not exist.
 File '/package.json' does not exist.
 FileWatcher:: Added:: WatchInfo: /src/project/fileWithImports.ts 250 undefined Source file
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 ======== Resolving module 'pkg0' from '/src/project/fileWithImports.ts'. ========
 Explicitly specified module resolution kind: 'Node16'.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
@@ -405,14 +402,10 @@ Directory '/node_modules' does not exist, skipping all lookups in it.
 ======== Module name 'pkg1' was not resolved. ========
 File '/src/project/node_modules/pkg0/package.json' exists according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/pkg0/import.d.ts 250 undefined Source file
-File '/src/project/node_modules/pkg0/package.json' exists according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/fileWithTypeRefs.ts 250 undefined Source file
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 ======== Resolving type reference directive 'pkg2', containing file '/src/project/fileWithTypeRefs.ts', root directory '/src/project/node_modules/@types'. ========
 Resolving with primary search path '/src/project/node_modules/@types'.
 Looking up in 'node_modules' folder, initial location '/src/project'.
@@ -435,7 +428,6 @@ Directory '/node_modules' does not exist, skipping all lookups in it.
 ======== Type reference directive 'pkg3' was not resolved. ========
 File '/src/project/node_modules/pkg2/package.json' exists according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/pkg2/import.d.ts 250 undefined Source file
-File '/src/project/node_modules/pkg2/package.json' exists according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
@@ -443,13 +435,7 @@ FileWatcher:: Added:: WatchInfo: /src/project/randomFileForImport.ts 250 undefin
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/randomFileForTypeRef.ts 250 undefined Source file
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 ======== Resolving type reference directive 'pkg4', containing file '/src/project/__inferred type names__.ts', root directory '/src/project/node_modules/@types'. ========
 Resolving with primary search path '/src/project/node_modules/@types'.
 File '/src/project/node_modules/@types/pkg4/package.json' does not exist.
@@ -463,19 +449,10 @@ File '/src/project/package.json' does not exist according to earlier cached look
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/@types/pkg4/index.d.ts 250 undefined Source file
-File '/src/project/node_modules/@types/pkg4/package.json' does not exist according to earlier cached lookups.
-File '/src/project/node_modules/@types/package.json' does not exist according to earlier cached lookups.
-File '/src/project/node_modules/package.json' does not exist according to earlier cached lookups.
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 File '/a/lib/package.json' does not exist.
 File '/a/package.json' does not exist.
 File '/package.json' does not exist according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /a/lib/lib.d.ts 250 undefined Source file
-File '/a/lib/package.json' does not exist according to earlier cached lookups.
-File '/a/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 DirectoryWatcher:: Added:: WatchInfo: /src/project/node_modules 1 undefined Failed Lookup Locations
 Elapsed:: *ms DirectoryWatcher:: Added:: WatchInfo: /src/project/node_modules 1 undefined Failed Lookup Locations
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/pkg0/package.json 2000 undefined package.json file
@@ -770,9 +747,6 @@ File '/src/package.json' does not exist.
 File '/package.json' does not exist according to earlier cached lookups.
 Found 'package.json' at '/src/project/node_modules/pkg2/package.json'.
 'package.json' does not have a 'typesVersions' field.
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
@@ -1078,9 +1052,6 @@ File '/src/package.json' does not exist.
 File '/package.json' does not exist according to earlier cached lookups.
 Found 'package.json' at '/src/project/node_modules/pkg2/package.json'.
 'package.json' does not have a 'typesVersions' field.
-File '/src/project/package.json' does not exist according to earlier cached lookups.
-File '/src/package.json' does not exist according to earlier cached lookups.
-File '/package.json' does not exist according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
@@ -1428,7 +1399,6 @@ Resolving real path for '/src/project/node_modules/pkg1/require.d.ts', result '/
 File '/src/project/node_modules/pkg0/package.json' exists according to earlier cached lookups.
 File '/src/project/node_modules/pkg1/package.json' exists according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/pkg1/require.d.ts 250 undefined Source file
-File '/src/project/node_modules/pkg1/package.json' exists according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.
@@ -1751,7 +1721,6 @@ Resolving real path for '/src/project/node_modules/pkg3/require.d.ts', result '/
 File '/src/project/node_modules/pkg2/package.json' exists according to earlier cached lookups.
 File '/src/project/node_modules/pkg3/package.json' exists according to earlier cached lookups.
 FileWatcher:: Added:: WatchInfo: /src/project/node_modules/pkg3/require.d.ts 250 undefined Source file
-File '/src/project/node_modules/pkg3/package.json' exists according to earlier cached lookups.
 File '/src/project/package.json' does not exist according to earlier cached lookups.
 File '/src/package.json' does not exist according to earlier cached lookups.
 File '/package.json' does not exist according to earlier cached lookups.

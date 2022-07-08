@@ -4266,6 +4266,7 @@ namespace ts {
     /* @internal */
     export const enum StructureIsReused {
         Not,
+        SafeModuleCache,
         SafeModules,
         Completely,
     }
@@ -6593,6 +6594,15 @@ namespace ts {
         oldProgram?: Program;
         configFileParsingDiagnostics?: readonly Diagnostic[];
     }
+
+    /*@internal*/
+    export interface OldBuildInfoProgram {
+        isBuildInfoProgram: true; // temp -- later change this to some method thats distinct
+        getCompilerOptions(): CompilerOptions;
+    }
+
+    /*@internal*/
+    export type CreateProgramOptionsWithOldBuildInfoProgram = Omit<CreateProgramOptions, "oldProgram"> & { oldProgram?: OldBuildInfoProgram | Program; };
 
     /* @internal */
     export interface CommandLineOptionBase {

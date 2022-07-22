@@ -233,7 +233,7 @@ namespace ts {
             finishRecordingFilesWithChangedResolutions,
             // perDirectoryResolvedModuleNames and perDirectoryResolvedTypeReferenceDirectives could be non empty if there was exception during program update
             // (between startCachingPerDirectoryResolution and finishCachingPerDirectoryResolution)
-            startCachingPerDirectoryResolution: clearPerDirectoryResolutions,
+            startCachingPerDirectoryResolution,
             finishCachingPerDirectoryResolution,
             resolveModuleNames,
             resolveTypeReferenceDirectives,
@@ -324,6 +324,12 @@ namespace ts {
         function clearPerDirectoryResolutions() {
             moduleResolutionCache.clear();
             typeReferenceDirectiveResolutionCache.clear();
+        }
+
+        function startCachingPerDirectoryResolution() {
+            clearPerDirectoryResolutions();
+            moduleResolutionCache.update(resolutionHost.getCompilationSettings());
+            typeReferenceDirectiveResolutionCache.update(resolutionHost.getCompilationSettings());
         }
 
         function finishCachingPerDirectoryResolution() {

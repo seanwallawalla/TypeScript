@@ -4118,7 +4118,8 @@ namespace ts {
     /*@internal*/
     export const enum FilePreprocessingDiagnosticsKind {
         FilePreprocessingReferencedDiagnostic,
-        FilePreprocessingFileExplainingDiagnostic
+        FilePreprocessingFileExplainingDiagnostic,
+        ResolutionDiagnostics,
     }
 
     /*@internal*/
@@ -4139,7 +4140,13 @@ namespace ts {
     }
 
     /*@internal*/
-    export type FilePreprocessingDiagnostics = FilePreprocessingReferencedDiagnostic | FilePreprocessingFileExplainingDiagnostic;
+    export interface ResolutionDiagnostics {
+        kind: FilePreprocessingDiagnosticsKind.ResolutionDiagnostics;
+        diagnostics: readonly Diagnostic[];
+    }
+
+    /*@internal*/
+    export type FilePreprocessingDiagnostics = FilePreprocessingReferencedDiagnostic | FilePreprocessingFileExplainingDiagnostic | ResolutionDiagnostics;
 
     export interface Program extends ScriptReferenceHost {
         getCurrentDirectory(): string;
@@ -6921,6 +6928,13 @@ namespace ts {
         Dcts = ".d.cts",
     }
 
+    /*@internal*/
+    export interface ResolutionDiagnostic {
+        isImports: boolean;
+        entry: string;
+        packagePath: string;
+    }
+
     export interface ResolvedModuleWithFailedLookupLocations {
         readonly resolvedModule: ResolvedModuleFull | undefined;
         /* @internal */
@@ -6928,7 +6942,7 @@ namespace ts {
         /* @internal */
         affectingLocations?: string[];
         /* @internal */
-        resolutionDiagnostics?: Diagnostic[]
+        resolutionDiagnostics?: ResolutionDiagnostic[]
     }
 
     export interface ResolvedTypeReferenceDirective {
@@ -6951,7 +6965,7 @@ namespace ts {
         readonly resolvedTypeReferenceDirective: ResolvedTypeReferenceDirective | undefined;
         readonly failedLookupLocations: string[];
         /*@internal*/ affectingLocations?: string[];
-        /* @internal */ resolutionDiagnostics?: Diagnostic[];
+        /* @internal */ resolutionDiagnostics?: ResolutionDiagnostic[];
     }
 
     /* @internal */
